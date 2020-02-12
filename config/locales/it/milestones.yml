@@ -1,7 +1,8 @@
 it:
   milestones:
     index:
-      no_milestones: Non risultano traguardi predefiniti
+      no_milestones: Non sono state definite milestone
+      progress: Avanzamento
     show:
       publication_date: "Pubblicato il %{publication_date}"
-      status_changed: Status dell’investimento cambiato in
+      status_changed: Il progetto è cambiato di stato

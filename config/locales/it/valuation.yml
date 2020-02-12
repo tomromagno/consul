@@ -10,51 +10,70 @@ it:
         title: Bilanci partecipativi
         filters:
           current: Aperti
-          finished: Terminati
-        table_name: Nominativo
+          finished: Conclusi
+        table_name: Nome
         table_phase: Fase
-        table_assigned_investments_valuation_open: Proposte di investimento assegnate in valutazione
+        table_assigned_investments_valuation_open: Progetti di investimento assegnate in valutazione
         table_actions: Azioni
-        evaluate: Valutare
+        evaluate: Valuta
+        no_budgets: "Non ci sono bilanci"
     budget_investments:
       index:
         headings_filter_all: Tutte le voci
         filters:
-          valuation_open: Aperti
+          valuation_open: Aperte
           valuating: Valutazione in corso
-          valuation_finished: Stima conclusa
+          valuation_finished: Valutazione terminata
         assigned_to: "Assegnate a %{valuator}"
-        title: Progetti di investimento
-        edit: Modificare il dossier
+        title: Progetti di spesa
+        edit: Modifica fascicolo
+        valuators_assigned:
+          one: Valutatore assegnato
+          other: "%{count} valutatori assegnati"
+        no_valuators_assigned: Nessun valutatore assegnato
         table_id: ID
         table_title: Titolo
-        table_heading_name: Denominazione della voce di bilancio
+        table_heading_name: Nome della voce
         table_actions: Azioni
-        no_investments: "Non esistono progetti d'investimento."
+        no_investments: "Non ci sono progetti di spesa."
       show:
         back: Indietro
-        title: Progetto di investimento
-        info: Info sull'autore
-        by: Inviato da
-        sent: Inviato alle
-        heading: Intestazione
-        dossier: Dossier
-        edit_dossier: Modificare il dossier
-        price: Costi
+        title: Progetto di spesa
+        info: "Info sull'autore"
+        by: Inviata da
+        sent: Data di creazione
+        heading: Voce
+        dossier: Rapporto
+        edit_dossier: Modifica rapporto
+        price: Costo
         price_first_year: Costo del primo anno
         currency: "€"
         feasibility: Fattibilità
-        feasible: Fattibile
-        unfeasible: Irrealizzabile
+        feasible: Realizzabile
+        unfeasible: Non realizzabile
         undefined: Non definito
-        valuation_finished: Stima conclusa
+        valuation_finished: Valutazione conclusa
         duration: Tempo massimo di esecuzione
         responsibles: Responsabili
-        assigned_admin: Admin assegnato
-        assigned_valuators: Stimatori assegnati
+        assigned_admin: Amministratore assegnato
+        assigned_valuators: Valutatori assegnati
+        preview: Anteprima del bilancio
       edit:
-        dossier: Dossier
+        dossier: Fascicolo
+        price_html: "Costo (%{currency}) <small>(dato pubblico)</small>"
+        price_first_year_html: "Costo del primo anno (%{currency}) <small>(facoltativo, dato non pubblico)</small>"
+        price_explanation_html: Relazione di spesa <small>(facoltativo, dato pubblico)</small>
         feasibility: Fattibilità
+        feasible: Realizzabile
+        unfeasible: Non realizzabile
+        undefined_feasible: Non definito
+        feasible_explanation_html: Rapporto sulla fattibilità <small>(qualora lo sia, dato pubblico)</small>
+        valuation_finished: Valutazione conclusa
+        valuation_finished_alert: "Confermi di voler contrassegnare questo rapporto come completato? Una volta fatto, non è possibile annullare l'azione."
+        not_feasible_alert: "Sarà inviata immediatamente all'autore del progetto una email con il rapporto di non fattibilità."
+        duration_html: Tempo di esecuzione <small>(facoltativo, dato non pubblico)</small>
         save: Salva modifiche
       notice:
-        valuate: "Dossier aggiornato"
+        valuate: "Fascicolo aggiornato"
+      valuation_comments: Commenti di valutazione
+      not_in_valuating_phase: I progetti possono essere valutati solamente durante la fase di valutazione del Bilancio

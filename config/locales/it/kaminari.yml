@@ -2,21 +2,21 @@ it:
   helpers:
     page_entries_info:
       entry:
-        zero: Voci
-        one: Voce
-        other: Voce
+        zero: Ingressi
+        one: ingresso
+        other: ingressi
       more_pages:
-        display_entries: Visualizzati da <strong>%{first} -%{last}</strong> a <strong>%{total} %{entry_name}</strong>
+        display_entries: Elementi <strong>%{first}&nbsp;-&nbsp;%{last}</strong> di un totale di <strong>%{total} %{entry_name}</strong>
       one_page:
         display_entries:
-          zero: "%{entry_name} non può essere trovato"
-          one: C'è <strong>1 %{entry_name}</strong>
-          other: Ci sono <strong>%{count} %{entry_name}</strong>
+          zero: "La ricerca non ha prodotto risultati per %{entry_name}"
+          one: Presente <strong>1 %{entry_name}</strong>
+          other: Presenti <strong>%{count} %{entry_name}</strong>
   views:
     pagination:
-      current: Sei nella pagina
-      first: Primo
-      last: Ultimo
-      next: Successivo
+      current: Ti trovi nella pagina
+      first: Prima
+      last: Ultima
+      next: Successiva
       previous: Precedente
       truncate: "&hellip;"

@@ -1,159 +1,170 @@
 it:
   pages:
     conditions:
-      title: Termini e condizioni d'uso
-      subtitle: AVVISO LEGALE SULLE CONDIZIONI D'USO, PRIVACY E PROTEZIONE DEI DATI PERSONALI DEL PORTALE GOVERNO APERTO
-      description: Pagina di informazioni sulle condizioni di utilizzo, privacy e protezione dei dati personali.
+      title: "Condizioni d'uso"
+      subtitle: "Avviso sulle condizioni d'uso del portale DecidiTorino della Città di Torino"
+      description: "Pagina di informazione su condizioni d'uso, privacy e protezione dei dati personali."
     help:
-      title: "%{org} è una piattaforma di partecipazione cittadina"
-      guide: "Questa guida spiega a cosa serve e come funziona ciascuna sezione di %{org}."
+      title: "Scopri %{org}"
+      guide: "Questa guida spiega a cosa servono e come funzionano le sezioni di %{org}."
       menu:
         debates: "Dibattiti"
         proposals: "Proposte"
         budgets: "Bilanci partecipativi"
         polls: "Votazioni"
         other: "Altre informazioni di interesse"
-        processes: "Procedimenti"
+        processes: "Progetti"
       debates:
         title: "Dibattiti"
-        description: "Nella sezione %{link} è possibile presentare e condividere con altre persone le proprie opinioni rispetto a questioni di interesse relative alla città. È anche un luogo in cui generare idee che, attraverso le altre sezioni di %{org}, possano condurre ad azioni concrete del Consiglio Comunale."
+        description: "Crea un tema sul quale dibattere su qualsiasi argomento che intendi condividere con gli altri abitanti della tua città."
         link: "dibattiti cittadini"
-        feature_link: "registratevi su %{org}"
-        image_alt: "Pulsanti per valutare i dibattiti"
-        figcaption: 'Pulsanti "Sono d''accordo" e "Non sonod''accordo" per valutare ed appoggiare o meno i dibattiti.'
+        feature_html: "Puedes abrir debates, comentarlos y valorarlos con los botones de <strong>Estoy de acuerdo</strong> o <strong>No estoy de acuerdo</strong>. Para ello tienes que %{link}."
+        feature_link: "registrarte en %{org}"
+        image_alt: "Pulsanti per la valutazione dei dibattiti"
+        figcaption: "Pulsanti 'Sono d'accordo' e 'Non sono d'accordo' per la valutazione dei dibattiti."
       proposals:
         title: "Proposte"
-        description: "Nella sezione %{link} è possibile avanzare proposte da far realizzare dal Consiglio Comunale. Le proposte necessitano di sostegno e, se viene raggiunto un sostegno sufficiente, vengono ammesse al voto pubblico. Le proposte così approvate dal voto dei cittadini sono accettate dal Consiglio Comunale e realizzate."
-        link: "proposte dei cittadini"
+        description: "Proponi ciò che vorresti che la Città realizzasse e appoggia le proposte degli altri utenti."
+        link: "propuestas ciudadanas"
         image_alt: "Pulsante per appoggiare una proposta"
+        figcaption_html: 'Pulsante per "Appoggiare" una proposta.'
       budgets:
-        title: "Bilancio partecipativo"
-        description: "La sezione %{link} aiuta le persone a contribuire in maniera diretta alle decisioni relative a parte della spesa del bilancio comunale."
+        title: "Bilanci partecipativi"
+        description: "La sezione dei %{link} serve a far sì che la gente possa decidere, in maniera diretta, a cosa destinare una parte del bilancio municipale."
         link: "bilanci partecipativi"
-        image_alt: "Le fasi del bilancio partecipativo"
+        image_alt: "Diverse fasi di un bilancio partecipativo"
+        figcaption_html: 'Fase degli appoggi e fase della votazione dei bilanci partecipativi.'
       polls:
         title: "Votazioni"
-        description: "La sezione %{link} si attiva ogni volta che una proposta raggiunge l’1% del sostegno e va al voto o quando il Consiglio Comunale pone una questione sulla quale i cittadini debbano decidere."
-        link: "sondaggi"
-        feature_1: "Per partecipare al voto occorre %{link} e verificare l’account."
+        description: "La sezione delle %{link} si attiva ogni volta che una proposta raggiunge 5.000 appoggi e passa a votazione, o quando l'Amministrazione Comunale chiede alla cittadinanza di decidere a proposito di un certo tema."
+        link: "Votazioni"
+        feature_1: "Per partecipare alle votazioni è necessario %{link} e certificare la propria utenza."
         feature_1_link: "registrarsi su %{org_name}"
       processes:
-        title: "Procedimenti"
-        description: "Nella sezione %{link} i cittadini partecipano alla realizzazione e all’emendamento dei regolamenti comunali e possono fornire la propria opinione sulle politiche locali in dibattiti preventivi."
-        link: "processi"
+        title: "Progetti"
+        description: "Nella sezione %{link} è possibile partecipare all'elaborazione di progetti di interesse della città e su cui l'Amministrazione sta svolgendo studi per la loro realizzazione: la consultazione pertanto consente a tutti di esprimere le proprie opinioni e contribuire con le proprie idee e riflessioni sui progetti illustrati."
+        link: "Progetti"
       faq:
         title: "Problemi tecnici?"
-        description: "Leggi le FAQ per avere una possibile risposta alle tue domande."
-        button: "Visualizzare le domande frequenti (FAQ)"
+        description: "Leggi le domande frequenti per risolvere i tuoi dubbi."
+        button: "Visualizzare le domande frequenti"
         page:
-          title: "Domande frequenti (FAQ)"
-          description: "Usate questa pagina per risolvere le domande frequenti (FAQ) degli utenti del sito."
+          title: "Domande Frequenti"
+          description: "Usa questa pagina per risolvere i tuoi dubbi sull'uso di DecidiTorino."
       other:
         title: "Altre informazioni di interesse"
         how_to_use: "Usa %{org_name} nella tua città"
       how_to_use:
         text: |-
-          Usalo nella tua amministrazione locale o aiutaci a migliorarlo, è un software gratuito.
+          Utilizzalo nella tua città o aiutaci a migliorarlo, è software libero.
 
-          Questo Portale per l’Amministrazione Aperta usa la [app CONSUL](https://github.com/consul/consul 'consul github') che è un software gratuito, con [licenza AGPLv3](http://www.gnu.org/licenses/agpl-3.0.html 'AGPLv3 gnu' ), il che significa in parole povere che chiunque può utilizzare il codice liberamente, copiarlo, esaminarlo nei particolari, modificarlo e ridistribuirlo nel mondo con le modifiche che desidera (consentendo ad altri di fare lo stesso). Perché crediamo che la cultura sia migliore e più ricca quando è libera.
+          Questo portale di Governo Aperto usa il software libero [CONSUL](https://github.com/consul/consul 'github consul'), con [licenza AGPLv3](http://www.gnu.org/licenses/agpl-3.0.html 'AGPLv3 gnu' ), in poche parole significa che qualsiasi persona può liberamente usare il codice, copiarlo, vederlo nel dettaglio, modificarlo, e ridistribuirlo con le modifiche che desidera, a condizione che altri possano fare la medesima cosa. Tutto questo perché crediamo che la cultura, quando è libera, è migliore e si arrichisce di continuo.
 
-          Se sei un programmatore, puoi vedere il codice e aiutarci a migliorarlo sulla [app CONSUL](https://github.com/consul/consul 'consul github').
+          Se sei un programmatore, puoi prendere visione del codice e aiutarci a migliorare il [portale CONSUL](https://github.com/consul/consul 'github consul').
       titles:
-        how_to_use: Utilizzalo nel tuo comune
+        how_to_use: Utilizzalo nella tua città
     privacy:
-      title: Informativa sulla privacy
-      subtitle: "INFORMATIVA SULLA PRIVACY DEI DATI"
+      title: Trattamento dati personali
+      subtitle: "Informativa art. 13 del Regolamento europeo UE 670/2016"
     accessibility:
       title: Accessibilità
       description: |-
-        L'accessibilità della rete si riferisce alla possibilità di accesso alla rete e ai suoi contenuti da parte di tutte le persone, indipendentemente dalle disabilità (fisiche, intellettuali o tecniche) che possano insorgere o da quelle che derivano dal contesto di utilizzo (tecnologico o ambientale).
+        Per accessibilità web si intende la possibilità di accesso al Web e a tutti i suoi contenuti da parte di tutte le persone, indipendentemente dalle disabilità (fisiche, intellettuali o tecniche) che possano presentare o che derivino dal contesto di utilizzo (disabilità tecnologiche o ambientali).
 
-        Quando i siti web sono progettati con un occhio all'accessibilità, tutti gli utenti possono accedere ai contenuti a parità di condizioni, ad esempio:
+        Quando i siti web sono stati progettati tenendo in conto dell'accessibilità', tutti gli utenti possono arrivare in modo paritario ai contenuti, per esempio:
       examples:
-        - Fornendo un testo alternativo alle immagini, gli utenti ciechi o ipovedenti possono utilizzare lettori speciali per accedere alle informazioni.
-        - Quando i video hanno i sottotitoli, gli utenti con disabilità uditive possono comprenderli appieno.
-        - Se i contenuti sono scritti in un linguaggio semplice e descrittivo, gli utenti con problemi di apprendimento sono in grado di comprenderli meglio.
-        - Se l'utente ha problemi di mobilità ed è difficile utilizzare il mouse, le alternative con la tastiera aiutano nella navigazione.
+        - Inserendo un testo alternativo alle immagini, gli utenti non vedenti o con problemi di vista possono usare speciali lettori per ottenere l'informazione.
+        - Quando i video sono dotati di sottotitoli, gli utenti con difficoltà uditive possono comprenderli pienamente.
+        - Se i contenuti sono scritti usando un linguaggio semplice e sono illustrati, gli utenti con problemi di apprendimento sono facilitati nella comprensione.
+        - Se l'utente ha problemi di mobilità e non riesce ad usare il mouse, le combinazioni di tasti lo aiutano nella navigazione.
       keyboard_shortcuts:
-        title: Scorciatoie da tastiera
+        title: 'Tasti di scelta rapida'
         navigation_table:
-          description: Per consentire di navigare attraverso questo sito in maniera accessibile, è stato programmato un gruppo di tasti di accesso rapido che raccolgono le principali sezioni di interesse generale in cui è organizzato il sito.
-          caption: Scorciatoie da tastiera per il menu di navigazione
+          description: Per poter navigare fra le pagine di questo sito in maniera accessibile, è stato realizzato un gruppo di tasti di scelta rapida che portano alle principali sezioni del sito.
+          caption: Tasti di scelta rapida per il menu di navigazione
           key_header: Tasto
           page_header: Pagina
           rows:
-            - 
+            -
               key_column: 0
-              page_column: Homepage
-            - 
+              page_column: Inizio
+            -
               key_column: 1
               page_column: Dibattiti
-            - 
+            -
               key_column: 2
               page_column: Proposte
-            - 
+            -
               key_column: 3
-              page_column: Voti
-            - 
+              page_column: Votazioni
+            -
               key_column: 4
-              page_column: Bilanci partecipativi
-            - 
+              page_column: Progetti
+            -
               key_column: 5
-              page_column: Procedimenti legislativi
+              page_column: Bilanci partecipativi
         browser_table:
-          description: "A seconda del sistema operativo e del browser utilizzato, la combinazione di tasti sarà la seguente:"
-          caption: Combinazione di tasti a seconda del sistema operativo e del browser
+          description: "A seconda del sistema operativo e del browser che si utilizza, la combinazione dei tasti sarà la seguente:"
+          caption: Combinazione dei tasti in funzione del sistema operativo e del browser
           browser_header: Browser
-          key_header: Combinazione di tasti
+          key_header: Combinazione dei tasti
           rows:
-            - 
-              browser_column: Explorer
-              key_column: ALT + scelta rapida poi INVIO
-            - 
+            -
+              browser_column: Edge
+              key_column: ALT + tasto scelta rapida e poi ENTER
+            -
               browser_column: Firefox
-              key_column: ALT + MAIUSC + scelta rapida
-            - 
+              key_column: ALT + MAIUSCOLE + tasto scelta rapida
+            -
               browser_column: Chrome
-              key_column: ALT + scelta rapida (CTRL + ALT + tasti di scelta rapida per MAC)
-            - 
+              key_column: ALT + tasto scelta rapida (se è un MAC, CTRL + ALT + tasto scelta rapida)
+            -
               browser_column: Safari
-              key_column: ALT + scelta rapida (CMD + scelta rapida per MAC)
-            - 
+              key_column: ALT + tasto scelta rapida (se è un MAC, CMD + tasto scelta rapida)
+            -
               browser_column: Opera
-              key_column: MAIUSC + ESC + scelta rapida
+              key_column: MAIUSCOLE + ESC + tasto scelta rapida
       textsize:
-        title: Dimensione testo
+        title: Dimensione del testo
         browser_settings_table:
-          description: Il design accessibile di questo sito web consente all'utente di scegliere la dimensione del testo che più gli si addice. Questa azione può essere effettuata in modi diversi a seconda del browser utilizzato.
+          description: Il progetto accessibile di questo sito web consente all'utente di scegliere la dimensione del testo. Tale operazione può essere portata a termine in maniera differente a seconda del browser utilizzato.
           browser_header: Browser
-          action_header: Azione da intraprendere
+          action_header: Operazione da eseguire
           rows:
-            - 
-              browser_column: Explorer
-              action_column: Visualizza > Dimensione testo
-            - 
+            -
+              browser_column: Edge
+              action_column: Impostazioni e altro (icona) > Zoom
+            -
               browser_column: Firefox
-              action_column: Visualizza > Dimensione
-            - 
+              action_column: Apri menu (icona) > Reimposta il livello di zoom
+            -
               browser_column: Chrome
-              action_column: Impostazioni (icona) > Opzioni > Avanzate > Contenuto Web > Dimensione testo
-            - 
+              action_column: Personalizza e controlla Google Chrome (icona) > Dimensioni dei caratteri
+            -
               browser_column: Safari
-              action_column: Visualizza > Zoom In/Zoom out
-            - 
+              action_column: Visualizzazione > aumenta/riduci
+            -
               browser_column: Opera
-              action_column: Visualizza > scala
+              action_column: Vedi > scala
         browser_shortcuts_table:
-          description: "Un altro modo per modificare la dimensione del testo consiste nell'utilizzare le scorciatoie da tastiera definite dai browser, in particolare la combinazione di tasti:"
+          description: "Un altro modo per modificare la dimensione del testo è quello di impiegare le combinazioni di tasti di scelta rapida definite nei browser, in particolare la combinazione di tasti:"
           rows:
-            - 
-              shortcut_column: CTRL e + (CMD e + su MAC)
-              description_column: Aumenta le dimensioni del testo
-            - 
+            -
+              shortcut_column: CTRL e + (CMD e + in MAC)
+              description_column: per aumentare la dimensione del testo
+            -
+              shortcut_column: CTRL e - (CMD e - in MAC)
+              description_column: per ridurre la dimensione del testo
+      compatibility:
+        title: Compatibilità con gli standard e progetto visuale
+        description_html: 'Tutte le pagine di questo sito web rispettano le <strong>Norme di Accessibilità</strong> o Principi Generali del Progetto Accessibile stabiliti dal Gruppo di Lavoro <abbr title="Web Accessibility Initiative" lang="en">WAI</abbr> appartenente al W3C e sono conformi alle prescrizioni italiane di cui alla Legge 4/2004.'
     titles:
-      help: "Cos’é %{org}? - Partecipazione cittadina"
+      help: "Scopri %{org}"
     verify:
-      info: "Per verificare il tuo account inserisci i dati di accesso:"
+      code: Codice che hai ricevuto nella lettera
+      email: Email
+      info: "Per verificare la tua utenza, introduci i dati forniti durante la registrazione:"
       info_code: "Ora introduci il codice che hai ricevuto nella lettera:"
-      submit: Verifica il tuo account
+      password: Password
+      submit: Verifica il mio account
       title: Verifica il tuo account

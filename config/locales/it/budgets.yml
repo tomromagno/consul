@@ -2,167 +2,196 @@ it:
   budgets:
     ballots:
       show:
-        title: Il tuo voto
+        title: I miei voti
         amount_spent: Importo speso
-        remaining: "Hai ancora <span>%{amount}</span> da investire."
-        no_balloted_group_yet: "Non hai ancora votato in questo gruppo, vota!"
-        remove: Rimuovere il voto
-        voted:
-          one: "Hai votato <span>un</span> investimento."
-          other: "Hai votato <span>%{count}</span> investimenti."
-        voted_info: "Il tuo scrutinio è confermato!"
-        voted_info_2: "Ma puoi modificare il tuo voto ogni volta che vuoi finché questa fase sarà chiusa."
-        zero: Non hai ancora votato nessun progetto di investimento.
+        remaining: "Ti restano <span>%{amount}</span> per investire"
+        no_balloted_group_yet: "Non hai ancora votato i progetti di questo gruppo, vota!"
+        remove: Rimuovi voto
+        voted_html:
+          one: "Hai votato <span>un</span> progetto."
+          other: "Hai votato <span>%{count}</span> progetti."
+        voted_info_html: "I tuoi voti sono confermati!"
+        voted_info_2: "Però puoi cambiarli in qualsiasi momento fino alla chiusura di questa fase."
+        zero: Non hai ancora votato un progetto di spesa.
       reasons_for_not_balloting:
         not_logged_in: È necessario %{signin} o %{signup} per continuare.
-        not_verified: Solo gli utenti verificati possono votare gli investimenti; %{verify_account}.
-        organization: Alle organizzazioni non è permesso votare
-        not_selected: I progetti di investimento non selezionati non possono essere sostenuti
-        not_enough_money: "Hai già assegnato il budget disponibile.<br><small>Ricorda che puoi %{change_ballot} ogni volta che vuoi</small>"
-        no_ballots_allowed: Fase di selezione è chiusa
-        different_heading_assigned: "Hai già votato per un titolo diverso: %{heading_link}"
-        change_ballot: cambiare il tuo voto
-        casted_offline: Hai già partecipato offline
+        not_verified: I progetti di spesa possono essere appoggiati solamente da utenti certificati, %{verify_account}.
+        organization: Le organizzazioni non possono votare.
+        not_selected: Non si possono votare progetti irrealizzabili.
+        not_enough_money_html: "Hai già assegnato il bilancio disponibile.<br><small>Ricorda che puoi %{change_ballot} in qualsiasi momento</small>"
+        no_ballots_allowed: Il periodo di votazione è concluso.
+        different_heading_assigned_html: "Hai già votato progetti di un'altra voce: %{heading_link}"
+        change_ballot: cambiare i tuoi voti
+        casted_offline: Hai già partecipato di persona
     groups:
       show:
-        title: Selezionare un'opzione
-        unfeasible_title: Progetti di investimento irrealizzabili
-        unfeasible: Mostrare gli investimenti irrealizzabili
-        unselected_title: Investimenti che non sono stati selezionati per la fase di voto
-        unselected: Mostrare gli investimenti non selezionati per la fase di voto
+        title: Seleziona una opzione
+        unfeasible_title: Progetti di spesa irrealizzabili
+        unfeasible: Mostra i progetti irrealizzabili
+        unselected_title: Progetti non selezionati per la votazione finale
+        unselected: Mostra i progetti non selezionati per la votazione finale
     phase:
-      drafting: Bozza (Non visibile al pubblico)
+      drafting: Bozza (Non visibile pubblicamente)
       informing: Informazione
       accepting: Presentazione dei progetti
       reviewing: Revisione interna dei progetti
-      selecting: Selezione dei progetti
+      selecting: Fase degli appoggi
       valuating: Valutazione dei progetti
-      publishing_prices: Pubblicazione costi dei progetti
-      balloting: Votazione dei progetti
-      reviewing_ballots: Revisione voti
+      publishing_prices: Pubblicazione dei costi
+      balloting: Votazione finale
+      reviewing_ballots: Votazione conclusa
       finished: Risultati
     index:
-      title: Bilanci partecipativi
-      empty_budgets: Non ci sono bilanci.
+      title: Bilanci Partecipativi
+      empty_budgets: Non ci sono bilanci partecipativi.
       section_header:
-        icon_alt: Icona dei bilanci partecipativi
+        icon_alt: Icona dei Bilanci partecipativi
         title: Bilanci partecipativi
-        help: Aiuto con i bilanci partecipativi
+        help: Aiuto sui bilanci partecipativi
         all_phases: Vedi tutte le fasi
-      all_phases: Fasi dell'investimento di bilancio
-      map: Proposte di investimenti di bilancio geograficamente localizzate
-      investment_proyects: Elenco di tutti i progetti di investimento
-      unfeasible_investment_proyects: Elenco di tutti i progetti di investimento irrealizzabili
-      not_selected_investment_proyects: Elenco di tutti i progetti di investimento non selezionati per la fase di voto finale
-      finished_budgets: Bilanci partecipativi conclusi
+      all_phases: Fasi dei bilanci partecipativi
+      map: Progetti localizzabili geograficamente
+      investment_proyects: "Vedi l'elenco completo dei progetti di spesa"
+      unfeasible_investment_proyects: "Vedi l'elenco dei progetti di spesa non realizzabili"
+      not_selected_investment_proyects: "Vedi l'elenco dei progetti di spesa non selezionati per la votazione finale"
+      finished_budgets: Bilanci partecipativi terminati
       see_results: Vedi risultati
       section_footer:
-        title: Aiuto con i bilanci partecipativi
-        description: Attraverso i bilanci partecipativi i cittadini decidono a che progetti destinare parte del bilancio comunale.
-      milestones: Traguardi
+        title: Aiuto sui bilanci partecipativi
+        description: Con i bilanci partecipativi la popolazione decide a quali progetti vada destinata una parte del bilancio.
+      milestones: Continuazione dei progetti
     investments:
       form:
         tag_category_label: "Categorie"
-        tags_instructions: "Aggiungi etichette a questa proposta. Puoi scegliere tra le categorie proposte a aggiungerne di tue"
-        tags_label: Etichette
-        tags_placeholder: "Inserisci i tag che desideri utilizzare, separati da virgole (',')"
-        map_location: "Posizione sulla mappa"
-        map_location_instructions: "Scorri la mappa sino a individuare il luogo giusto e posiziona il segnaposto."
-        map_remove_marker: "Rimuovi segnaposto"
-        map_skip_checkbox: "Questo investimento non ha una precisa collocazione geografica ovvero io non ne sono a conoscenza."
+        tags_instructions: "Aggiungi un tag a questo progetto. Puoi scegliere tra le categorie proposte o introdurre quelle che desideri"
+        tags_label: Tags
+        tags_placeholder: "Scrivi i tags che desideri separandoli con il carattere virgola (',')"
+        map_location: "Localizzazione nella mappa"
+        map_location_instructions: "Naviga sulla mappa fino al punto scelto e metti il marcatore."
+        map_remove_marker: "Elimina il marcatore"
+        location: "Informazione aggiuntiva sulla localizzazione"
+        map_skip_checkbox: "A questo progetto non corrisponde una localizzazione concreta o non la conosco."
       index:
-        title: Bilancio partecipativo
-        unfeasible: Progetti di investimento irrealizzabili
-        unfeasible_text: "L’investimento deve rispettare una serie di requisiti (legalità, concretezza, rientrare nelle competenze della città, non eccedere i limiti di bilancio) per essere dichiarato attuabile e accedere al voto finale. Tutti gli investimenti che non rispettano tali criteri sono identificati come irrealizzabili e riportati nella lista seguente, assieme al relativo rapporto di non fattibilità."
-        by_heading: "Progetti di investimento con ambito di applicazione: %{heading}"
+        title: Bilanci partecipativi
+        unfeasible: Progetti di spesa non realizzabili
+        unfeasible_text: "I progetti presentati devono incontrare una serie di criteri (legalità, concretezza, non superare i fondi a disposizione) per essere dichiarati realizzabili e giungere alla fase della votazione finale. Tutti i progetti che non soddisfano tali criteri sono segnati come non realizzabili e pubblicati nella lista seguente, insieme al corrispondente rapporto di non fattibilità."
+        by_heading: 'Progetti di spesa con ambito: %{heading}'
         search_form:
-          button: Ricercare
-          placeholder: Ricercare progetti di investimento...
-          title: Ricercare
+          button: Cerca
+          placeholder: Cerca progetti di spesa...
+          title: Cerca
+        search_results_html:
+          one: " che contiene <strong>'%{search_term}'</strong>"
+          other: " che contengono <strong>'%{search_term}'</strong>"
         sidebar:
           my_ballot: I miei voti
-          voted_info: È possibile %{link} in qualsiasi momento fino alla fine di questa fase. Non è necessario spendere tutti i fondi disponibili.
-          voted_info_link: cambiare il tuo voto
-          change_ballot: "Se cambi idea è possibile cancellare il tuo voto in %{check_ballot} e ricominciare da capo."
-          check_ballot_link: "controllare il mio voto"
-          zero: Non hai ancora votato nessun progetto di investimento in questo gruppo.
-          verified_only: "Per creare un nuovo budget d'investimento %{verify}."
-          create: "Crea un investimento di bilancio"
-          not_logged_in: "Per creare un nuovo investimento di bilancio è necessario %{sign_in} o %{sign_up}."
+          voted_html:
+            one: "<strong>Hai votat una progetto per un valore di %{amount_spent}</strong>"
+            other: "<strong>Hai votato %{count} progetti per un valore di %{amount_spent}</strong>"
+          voted_info: È possibile %{link} in qualsiasi momento fino alla chiusura di questa fase. Non è necessario spendere tutto il denaro a tua disposizione.
+          voted_info_link: cambiare i tuoi voti
+          different_heading_assigned_html: "Hai già sostenuto i progetti di un'altra sezione del bilancio: %{heading_link}"
+          change_ballot: "Se modifichi la tua opinione puoi cancellare i tuoi voti in %{check_ballot} e iniziare nuovamente."
+          check_ballot_link: "controllare e confermare i miei voti"
+          zero: Non hai ancora votato alcun progetto di spesa in questo ambito del bilancio.
+          verified_only: "Per creare un nuovo progetto di spesa %{verify}."
+          verify_account: "certifica il tuo account"
+          create: "Crea progetto di spesa"
+          not_logged_in: "Per creare un nuovo progetto di spesa devi %{sign_in} o %{sign_up}."
+          sign_in: "accedere"
+          sign_up: "registrarti"
           by_feasibility: Per fattibilità
-          feasible: Progetti realizzabili
-          unfeasible: Progetti non realizzabili
+          feasible: Vedi i progetti realizzabili
+          unfeasible: Vedi i progetti irrealizzabili
         orders:
-          random: casuale
-          confidence_score: più apprezzati
-          price: per costi
+          random: Aleatori
+          confidence_score: Meglio valutati
+          price: Per costo
+      share:
+        message: "Ho presentato il progetto %{title} su %{handle}. Presenta anche tu un progetto!"
       show:
-        author_deleted: Utente cancellato
-        price_explanation: Informazioni sui costi
-        unfeasibility_explanation: Informazioni sulla infattibilità
-        share: Condividere
-        title: Progetto di investimento
-        supports: Sostegni
+        author_deleted: Utente eliminato
+        price_explanation: Rapporto di costo
+        unfeasibility_explanation: Rapporto di infattibilità
+        code_html: "Codice progetto di spesa: <strong>%{code}</strong>"
+        location_html: "Ubicazione: <strong>%{location}</strong>"
+        organization_name_html: "Proposto a nome di: <strong>%{name}</strong>"
+        share: Condividi
+        title: Progetto di spesa
+        supports: Appoggi
         votes: Voti
-        price: Costi
+        price: Costo
         comments_tab: Commenti
-        milestones_tab: Traguardi
+        milestones_tab: Milestone
         author: Autore
-        project_winner: "Progetto di investimento vincitore"
-      wrong_price_format: Solo numeri interi
+        project_unfeasible_html: "Questo progetto di spesa <strong>è stato contrassegnato come irrealizzabile</strong> e non passerà alla fase di votazione."
+        project_selected_html: "Questo progetto di spesa <strong>è stato selezionato</strong> per la fase di votazione."
+        project_winner: "Progetto di spesa vincitore"
+        project_not_selected_html: "Questo progetto di spesa <strong>non è stato selezionato</strong> per la fase di votazione."
+        see_price_explanation: Vedi rapporto di costo
+      wrong_price_format: Si possono includere solo caratteri numerici
       investment:
-        add: Votare
-        already_added: Hai già aggiunto questo progetto di investimento
-        already_supported: Hai già espresso il tuo sostegno per questo progetto di investimento. Condividilo!
-        support_title: Sostieni questo progetto
+        add: Vota
+        already_added: Hai già aggiunto questo progetto di spesa
+        already_supported: Hai già appoggiato questo progetto di spesa. Condividilo!
+        support_title: Appoggia questo progetto
         confirm_group:
-          one: "Puoi dare il tuo sostegno agli investimenti solo in %{count} distretto. Se continui non potrai cambiare la scelta in merito al tuo distretto. Sei sicuro?"
-          other: "Puoi dare il tuo sostegno agli investimenti solo in %{count} distretti. Se continui non potrai cambiare la scelta in merito al tuo distretto. Sei sicuro?"
+          one: "Puoi appoggiare solamente i progetti in %{count} circoscrizione. Se prosegui non potrai cambiare la selezione di questa circoscrizione. Sei sicuro/a?"
+          other: "Puoi appoggiare solamente i progetti in %{count} circoscrizioni. Se prosegui non potrai cambiare la selezione di questa circoscrizione. Sei sicuro/a?"
         supports:
-          zero: Nessun sostegno
-          one: 1 sostegno
-          other: "%{count} sostegni"
-        give_support: Sostieni
+          zero: Senzi appoggi
+          one: 1 appoggio
+          other: "%{count} appoggi"
+        give_support: Appoggia
       header:
-        check_ballot: Controlla il mio voto
-        change_ballot: "Se cambi idea è possibile cancellare il tuo voto in %{check_ballot} e ricominciare da capo."
-        check_ballot_link: "controlla il mio voto"
-        price: "Questa sezione dispone di un budget di"
+        check_ballot: Controllare e confermare i miei voti
+        different_heading_assigned_html: "Hai già sostenuto progetti di un'altra sezione del bilancio: %{heading_link}"
+        change_ballot: "Se cambi opinione puoi eliminare i tuoi voti in %{check_ballot} e iniziare nuovamente."
+        check_ballot_link: "controllare e confermare i miei voti"
+        price: "Questa voce dispone di un bilancio di"
     progress_bar:
-      assigned: "Sono stati assegnati: "
-      available: "Budget disponibile: "
+      assigned: "Hai assegnato: "
+      available: "Bilancio disponibile: "
     show:
       group: Gruppo
       phase: Fase attuale
-      unfeasible_title: Progetti di investimento irrealizzabili
-      unfeasible: Mostra gli investimenti irrealizzabili
-      unselected_title: Investimenti che non sono stati selezionati per la fase di voto
-      unselected: Mostra gli investimenti non selezionati per la fase di voto
-      see_results: Vedi risultati
+      unfeasible_title: Progetti di spesa irrealizzabili
+      unfeasible: Mostra i progetti irrealizzabili
+      unselected_title: Progetti non selezionati per la votazione finale
+      unselected: Mostra i progetti non selezionati per la votazione finale
+      see_results: Mostra risultati
     results:
       link: Risultati
-      page_title: "%{budget} - risultati"
-      heading: "Risultati per il bilancio partecipativo"
-      heading_selection_title: "Per circoscrizione"
+      page_title: "%{budget} - Risultati"
+      heading: "Risultati bilanci partecipativi"
+      heading_selection_title: "Ambito di esecuzione"
       ballot_lines_count: Voti
-      hide_discarded_link: Nascondere le scartate
-      show_all_link: Visualizzare tutti
-      price: Costi
-      amount_available: Budget disponibile
-      accepted: "Proposta di spesa accettata: "
-      discarded: "Proposta di spesa scartata: "
+      hide_discarded_link: Nascondi scartati
+      show_all_link: Mostra tutti
+      price: Prezzo totale
+      amount_available: Bilancio disponibile
+      accepted: 'Progetto di spesa accettato: '
+      discarded: 'Progetto di spesa scartato: '
       incompatibles: Incompatibili
-      investment_proyects: Elenco di tutti i progetti di investimento
-      unfeasible_investment_proyects: Elenco di tutti i progetti di investimento irrealizzabili
-      not_selected_investment_proyects: Elenco di tutti i progetti di investimento non selezionati per il voto
+      investment_title: Titolo del progetto di spesa
+      investment_proyects: "Vedi l'elenco completo dei progetti di spesa"
+      unfeasible_investment_proyects: "Vedi l'elenco dei progetti di spesa non realizzabili"
+      not_selected_investment_proyects: "Vedi l'elenco dei progetti di spesa non selezionati per la votazione finale"
     executions:
-      link: "Traguardi"
-      heading_selection_title: "Per circoscrizione"
+      link: "Continuazione"
+      page_title: "%{budget} - Continuazione dei progetti"
+      heading: "Continuazione dei progetti"
+      heading_selection_title: "Ambito di attuazione"
+      no_winner_investments: "In questo stato non ci sono progetti di spesa vincitori"
       filters:
         status:
-          all: "Tutto (%{count})"
+          label: "Stato attuale del progetto"
+          all: "Tutti (%{count})"
+        milestone_tag:
+          label: "Tags di Tracciamento"
+          all: "Tutti (%{count})"
     phases:
       errors:
-        dates_range_invalid: "La Data di inizio non può essere uguale o successiva alla Data finale"
-        prev_phase_dates_invalid: "La data di inizio deve essere posteriore alla data di inizio della fase (%{phase_name}) precedentemente abilitata"
-        next_phase_dates_invalid: "La data di conclusione deve essere precedente alla data di conclusione della fase (%{phase_name}) successivamente abilitata"
+        dates_range_invalid: "La data di inizio non può essere uguale o successiva a quella di fine"
+        prev_phase_dates_invalid: "La data di inizio deve essere successiva alla data di inizio della fase precedente abilitata (%{phase_name})"
+        next_phase_dates_invalid: "La data di fine deve essere antecedente alla data di fine della seguente fase abilitata (%{phase_name})"

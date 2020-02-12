@@ -1,6 +1,6 @@
 it:
   date:
     order:
-      - :year
-      - :month
       - :day
+      - :month
+      - :year

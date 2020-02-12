@@ -2,13 +2,13 @@ it:
   verification:
     alert:
       lock: Hai raggiunto il numero massimo di tentativi ammessi. Si prega di riprovare più tardi.
-    back: Tornare al mio account
+    back: Torna al mio account
     email:
       create:
         alert:
-          failure: C'è stato un problema nell'invio di un'e-mail di conferma al tuo account
+          failure: Si è verificato un problema durante la spedizione della email al tuo indirizzo
         flash:
-          success: "Abbiamo inviato una email di conferma al tuo account: %{email}"
+          success: "Ti abbiamo spedito una mail di conferma al tuo indirizzo di posta: %{email}"
       show:
         alert:
           failure: Codice di verifica non corretto
@@ -17,62 +17,92 @@ it:
     letter:
       alert:
         unconfirmed_code: Non hai ancora inserito il codice di conferma
+      create:
+        flash:
+          success_html: Prima delle votazioni riceverai una lettera con le istruzioni per verificare il tuo account.<br> Ricorda che puoi evitare la spedizione effettuando la verifica di persona in uno qualsiasi degli %{offices}.
       edit:
-        see_all: Vedere le proposte
+        see_all: Vedi proposte
         title: Lettera richiesta
       errors:
-        incorrect_code: Codice di verifica non corretto
+        incorrect_code: Codice di verifica errato
       new:
-        explanation: "Per partecipare alla votazione finale puoi:"
-        go_to_index: Vedere le proposte
-        send_letter: Inviatemi una lettera con il codice
-        title: Congratulazioni!
-        user_permission_info: Con il tuo account puoi...
+        explanation: "Per partecipare alle votazioni finali puoi:"
+        go_to_index: Vai a DecidiTorino
+        office: Eseguire la verifica di persona in qualsiasi Sportello per il Cittadino
+        send_letter: Richiedere una lettera per posta
+        title: 'Congratulazioni!'
+        user_permission_info: Con il tuo profilo puoi...
       update:
         flash:
-          success: Il codice è corretto, pertanto il tuo account è ora considerato come verificato
+          success: Codice corretto. Il tuo account è già stato certificato
     redirect_notices:
-      already_verified: Questo account utente è già verificato
-      email_already_sent: Abbiamo già inviato un'e-mail con un link di conferma. Se non è possibile recuperare l'email, qui si può richiedere che venga reinviata
+      already_verified: Il tuo account è già stato verificato
+      email_already_sent: Ti è stata già spedita una email con un link per la conferma, se non la trovi puoi richiedere qui un nuovo invio
     residence:
+      alert:
+        unconfirmed_residency: Non hai ancora verificato la residenza
+      create:
+        flash:
+          success: Residenza verificata
       new:
-        document_number: Numero del documento
+        accept_terms_text: "Accetto %{terms_url} alla piattaforma DecidiTorino"
+        accept_terms_text_title: "Accetto i termini per l'accesso completo alla piattaforma DecidiTorino"
+        date_of_birth: Data di nascita
+        document_number: Dati identificativi del documento
         document_number_help_title: Aiuto
+        document_number_help_text_html: "Introduci i 16 caratteri del Codice Fiscale."
         document_type:
           passport: Passaporto
-        error_not_allowed_age: Non hai l'età minima richiesta per partecipare
-        terms: termini e condizioni d'uso
+          residence_card: Carta di residenza
+          spanish_id: Carta di Identità
+        document_type_label: Tipo di documento
+        error_not_allowed_age: "No hai l'età minima per partecipare"
+        error_not_allowed_postal_code: Per completare la certificazione devi essere residente a Torino. Nel campo CAP si può inserire 10100 o un valore compreso fra 10121 e 10156. 
+        error_verifying_census: Non è stato possibile verificare in Anagrafe i tuoi dati. Per favore, conferma la correttezza dei tuoi dati chiamando il Comune o recandoti ad uno Sportello per il Cittadino.
+        form_errors: hanno impedito la certificazione della residenza
+        postal_code: CAP
+        postal_code_note: Per completare la certificazione devi essere residente a Torino. Nel campo CAP si può inserire 10100 o un valore compreso fra 10121 e 10156.
+        terms: "i termini per l'accesso completo"
+        title: Verifica residenza
+        verify_residence: Verifica residenza
     sms:
       create:
         flash:
           success: Inserisci il codice di conferma inviato tramite SMS
       edit:
-        resend_sms_link: Cliccare qui per richiedere un nuovo codice
-        resend_sms_text: Non hai ricevuto un SMS con il codice di conferma?
-        submit_button: Inviare
+        confirmation_code: Inserisci il codice ricevuto sul tuo telefonino
+        resend_sms_link: Richiedere un nuovo codice
+        resend_sms_text: 'Non hai ricevuto un SMS con il codice di conferma?'
+        submit_button: Invia
         title: SMS di conferma
       new:
-        phone: Inserisci il tuo numero di cellulare per ricevere il codice
-        submit_button: Inviare
-        title: Inviare SMS di conferma
+        phone: Introduci il tuo numero di cellulare (con SIM italiana) per ricevere il codice
+        phone_format_html: "<strong><em>(Esempio: 338....)</em></strong>"
+        phone_note: "L'SMS con il codice di verifica può arrivare dopo qualche minuto di attesa. In caso di mancata ricezione, può esserci un problema tecnico, ti chiediamo di riprovare più tardi."
+        phone_placeholder: "Esempio: 338...."
+        submit_button: Invia
+        title: SMS di conferma
       update:
-        error: Codice di conferma non corretto
+        error: Codice di conferma errato
         flash:
           level_three:
-            success: Il codice è corretto, pertanto il tuo account è ora considerato come verificato
+            success: Codice corretto. Il tuo account è stato verificato
           level_two:
             success: Codice corretto
-    step_1: Indirizzo
+    step_1: Residenza
     step_2: SMS di conferma
     step_3: Verifica finale
     user_permission_debates: Partecipare ai dibattiti
-    user_permission_info: Una volta verificati i tuoi dati, sarai in grado di...
+    user_permission_info: Dopo aver verificato i tuoi dati potrai...
     user_permission_proposal: Creare nuove proposte
-    user_permission_support_proposal: Sostenere proposte*
-    user_permission_votes: Partecipare al voto finale *
+    user_permission_support_proposal: Sostenere le proposte
+    user_permission_votes: Partecipare alle votazioni finali
     verified_user:
+      form:
+        submit_button: Invia codice
       show:
         email_title: Email
-        phone_title: Numeri di telefono
-        title: Informazioni disponibili
-        use_another_phone: Utilizzare un altro telefono
+        explanation: In Anagrafe disponiamo dei seguenti dati, seleziona dove vuoi che ti sia spedito il codice di conferma.
+        phone_title: Telefono
+        title: Informazione disponibile
+        use_another_phone: Usare un altro numero di telefono

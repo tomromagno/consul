@@ -2,117 +2,148 @@ it:
   legislation:
     annotations:
       comments:
-        see_all: Vedi tutte
-        see_complete: Vedi completi
+        see_all: Vedi tutti
+        see_complete: Vedi completo
         comments_count:
           one: "%{count} commento"
           other: "%{count} commenti"
         replies_count:
           one: "%{count} risposta"
-          other: "%{count} risposta"
-        cancel: Cancella
-        publish_comment: Pubblica commento
+          other: "%{count} risposte"
+        cancel: Annulla
+        publish_comment: Pubblica Commento
       form:
-        phase_not_open: Questa fase non è ancora aperta
+        phase_not_open: Questa fase del progetto non è aperta
+        login_to_comment: È necessario %{signin} o %{signup} per commentare.
+        signin: iniziare la sessione
+        signup: registrarsi
       index:
         title: Commenti
         comments_about: Commenti su
-        see_in_context: Vedi nel contesto
+        comment_about: "Commento su:"
+        see_in_context: Mostra nel contesto
         comments_count:
           one: "%{count} commento"
           other: "%{count} commenti"
       show:
-        title: Commentare
+        title: Commento
       version_chooser:
-        seeing_version: Commmenti per la versione
-        see_text: Vedere la bozza di testo
+        seeing_version: Commenti della versione
+        see_text: Mostra la bozza del testo
     draft_versions:
       changes:
         title: Modifiche
-        seeing_changelog_version: Riepilogo delle modifiche
-        see_text: Vedi la bozza di testo
+        seeing_changelog_version: Elenco delle modifiche della revisione
+        see_text: Mostra la bozza del testo
       show:
-        loading_comments: Caricamento dei commenti
-        seeing_version: Stai vedendo la versione in bozza
-        select_draft_version: Selezionare la bozza
+        loading_comments: Caricamento dei commenti in corso
+        seeing_version: Stai vedendo la revisione
+        select_draft_version: Seleziona bozza
         select_version_submit: vedi
-        updated_at: aggiornato a %{date}
-        see_changes: vedere il riepilogo delle modifiche
-        see_comments: Vedere tutti i commenti
-        text_toc: Sommario
+        updated_at: aggiornata il %{date}
+        see_changes: vedi lista delle modifiche
+        see_comments: Vedi tutti i commenti
+        text_toc: Indice
         text_body: Testo
         text_comments: Commenti
     processes:
       header:
         additional_info: Ulteriori informazioni
-        description: Descrizione
-        more_info: Ulteriori informazioni e contesto
+        description: In cosa consiste
+        more_info: Maggiori informazioni e contesto
       proposals:
         empty_proposals: Non ci sono proposte
         filters:
-          winners: Selezionato
+          random: Aleatorie
+          winners: Selezionate
       debate:
         empty_questions: Non ci sono domande
-        participate: Partecipare al dibattito
+        participate: Dai i tuoi contributi al dibattito iniziale partecipando ai seguenti temi.
       index:
-        filter: Filtra
+        filter: Filtro
         filters:
-          open: Processi aperti
-          past: Precedente
-        no_open_processes: Non ci sono processi aperti
-        no_past_processes: Non ci sono processi precedenti
+          open: Progetti attivi
+          past: Terminati
+        no_open_processes: Non ci sono progetti attivi
+        no_past_processes: Non ci sono progetti terminati
         section_header:
-          icon_alt: Icona dei procedimenti legislativi
-          title: Processi di legislazione
-          help: Guida sui processi di legislazione
+          icon_alt: Icona dei Progetti
+          title: Progetti
+          help: Aiuto sui progetti
         section_footer:
-          title: Guida sui processi di legislazione
-          description: Partecipa ai dibattiti e ai procedimenti precedenti all’approvazione di un’ordinanza o di un’iniziativa comunale. La tua opinione verrà presa in considerazione dal Consiglio Comunale.
+          title: Aiuto sui progetti
+          description: "Partecipa ai dibattiti e ai progetti precedenti l'approvazione di una norma, di un'opera o di un progetto comunale. La tua opinione sarà tenuta in considerazione da parte del Comune."
       phase_not_open:
-        not_open: Questa fase non è ancora aperta
+        not_open: Questa fase del progetto non è stata ancora aperta
       phase_empty:
-        empty: Nulla è stato pubblicato al momento
+        empty: "Al momento non c'è nulla di pubblicato"
       process:
-        see_latest_comments: Vedere i commenti più recenti
-        see_latest_comments_title: Commenta questo procedimento
+        see_latest_comments: Mostra gli ultimi contributi
+        see_latest_comments_title: Contribuisci a questo progetto
       shared:
-        key_dates: Date chiave
-        homepage: Homepage
-        debate_dates: Dibattito
-        draft_publication_date: Pubblicazione in bozza
+        key_dates: Fasi della partecipazione
+        homepage: Inizio
+        debate_dates: Dibattito iniziale
+        draft_publication_date: Pubblicazione bozza
         allegations_dates: Commenti
-        result_publication_date: Pubblicazione del risultato finale
-        milestones_date: Seguendo
+        result_publication_date: Pubblicazione risultati
+        milestones_date: Milestone
         proposals_dates: Proposte
     questions:
       comments:
-        comment_button: Pubblica la risposta
-        comments_title: Apri le risposte
+        comment_button: Pubblica risposta
+        comments_title: Risposte aperte
         comments_closed: Fase chiusa
         form:
           leave_comment: Lascia la tua risposta
       question:
+        total:
+          zero: Non sono presenti dibattiti
+          one: "%{count} dibattito"
+          other: "%{count} dibattiti"
         comments:
-          zero: Non ci sono commenti
+          zero: Senza commenti
           one: "%{count} commento"
           other: "%{count} commenti"
         debate: Dibattito
       show:
-        answer_question: Invia la risposta
-        next_question: Prossima domanda
+        answer_question: Invia risposta
+        next_question: Domanda successiva
         first_question: Prima domanda
-        share: Condividere
-        title: Procedimento legislativo collaborativo
+        share: Condividi
+        title: Progetto
       participation:
-        phase_not_open: Questa fase non è ancora aperta
-        organizations: Le organizzazioni non sono ammesse a partecipare al dibattito
-        unauthenticated: È necessario %{signin} o %{signup} per partecipare.
-        verified_only: Possono partecipare solo gli utenti verificati, %{verify_account}.
-        debate_phase_not_open: La fase di dibattito è conclusa e non è più possibile accettare risposte
+        phase_not_open: Questa fase non è aperta
+        organizations: Le organizzazioni non possono partecipare al dibattito
+        signin: iniziare la sessione
+        signup: registrarsie
+        unauthenticated: È necessario %{signin} o %{signup} per partecipare al dibattito.
+        verified_only: Solamente gli utenti verificati possono partecipare al dibattito, %{verify_account}.
+        verify_account: verifica il tuo account
+        debate_phase_not_open: La fase del dibattito iniziale si è conclusa e in questo momento non si accettano risposte
     shared:
-      share: Condividere
-      share_comment: Commenta la bozza %{version_name} del procedimento %{process_name}
+      share: Condividi
+      share_comment: Commento sulla %{version_name} della bozza del progetto %{process_name}
     proposals:
       form:
         tags_label: "Categorie"
       not_verified: "Per votare le proposte %{verify_account}."
+      process_title: Progetto di legislazione collaborativa
+      total:
+        zero: Non sono presenti proposte
+        one: "%{count} proposta"
+        other: "%{count} proposte"
+    summary:
+      title: Sommario
+      votes: voti
+      debates_phase: Fase dei dibattiti
+      proposal_phase: Fase delle proposte
+      comments_phase: Fase dei commenti al testo
+      comments:
+        zero: Non sono presenti commenti
+        one: "%{count} commento"
+        other: "%{count} commenti"
+      most_voted_comments: "Commenti più votati:"
+      no_allegation: Non sono presenti commenti al testo.
+      version: versione
+      process_empty: Il progetto non ha alcuna fase.

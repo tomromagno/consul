@@ -1,19 +1,20 @@
 it:
   images:
-    remove_image: Rimuovi immagine
+    remove_image: Elimina immagine
     form:
       title: Immagine descrittiva
-      title_placeholder: Aggiungi un titolo descrittivo per l'immagine
-      delete_button: Rimuovere immagine
-      note: "È possibile caricare una singola immagine delle seguenti tipologie: %{accepted_content_types}, fino a %{max_file_size} MB."
+      title_placeholder: "Aggiungi un titolo descrittivo dell'immagine"
+      attachment_label: Seleziona una immagine
+      delete_button: Elimina immagine
+      note: "È possibile allegare una immagine nei formati: %{accepted_content_types}, di dimensione fino a %{max_file_size} MB per file."
       add_new_image: Aggiungi immagine
       admin_title: "Immagine"
       admin_alt_text: "Testo alternativo per l'immagine"
     actions:
       destroy:
-        notice: Immagine cancellata con successo.
-        alert: Non è possibile distruggere l’immagine.
+        notice: "L'immagine è stata eliminata con successo."
+        alert: "Non è stato possibile eliminare l'immagine."
     errors:
       messages:
-        in_between: deve essere tra %{min} e %{max}
-        wrong_content_type: il contenuto %{content_type} non corrisponde ad alcuna delle tipologie accettate %{accepted_content_types}
+        in_between: deve stare fra %{min} e %{max}
+        wrong_content_type: "Il tipo di contenuto %{content_type} dell'immagine non coincide con nessuno dei tipi di contenuto accettati %{accepted_content_types}"
